@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mi Mejor Patita</string>
+    <string name="clinic_bio">En Mi Mejor Patita cuidamos a tus mascotas con dedicación profesional, tecnología médica e instalaciones pensadas para su bienestar.</string>
+    <string name="clinic_address">Av. Las Palmeras 482, San Isidro</string>
+    <string name="clinic_city">Sector Financiero, Lima</string>
+    <string name="clinic_phone">014567890</string>
+    <string name="clinic_hours_week">Lun a Vie: 08:30 AM - 07:30 PM</string>
+    <string name="clinic_hours_sat">Sábados: 09:00 AM - 05:00 PM</string>
+    <string name="clinic_hours_urg">Urgencias 24/7 con previa llamada</string>
+
+    <string name="nav_home">Inicio</string>
+    <string name="nav_booking">Reservar</string>
+    <string name="nav_calendar">Mis Citas</string>
+    <string name="empty_appointments">Aún no has agendado citas</string>
+</resources>
