@@ -49,15 +49,9 @@ interface AppContextType {
   cancelAppointment: (id: string) => void;
 
   // UI state & Feedback
-  isDeviceFrame: boolean;
-  setIsDeviceFrame: React.Dispatch<React.SetStateAction<boolean>>;
   snackbar: SnackbarMessage | null;
   showSnackbar: (message: string, type?: 'success' | 'error' | 'info') => void;
   closeSnackbar: () => void;
-  
-  // Academic Rubric Modal
-  isRubricModalOpen: boolean;
-  setIsRubricModalOpen: (open: boolean) => void;
 }
 
 const AppContext = createContext<AppContextType | undefined>(undefined);
@@ -106,10 +100,8 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
   // Services catalog (static verified list)
   const [services] = useState<VetService[]>(INITIAL_SERVICES);
 
-  // UI frame toggles & feedbacks
-  const [isDeviceFrame, setIsDeviceFrame] = useState<boolean>(true);
+  // UI feedbacks
   const [snackbar, setSnackbar] = useState<SnackbarMessage | null>(null);
-  const [isRubricModalOpen, setIsRubricModalOpen] = useState<boolean>(false);
 
   // Sync pets to local storage
   useEffect(() => {
@@ -309,13 +301,9 @@ export const AppProvider: React.FC<{ children: React.ReactNode }> = ({ children 
         appointments,
         addAppointment,
         cancelAppointment,
-        isDeviceFrame,
-        setIsDeviceFrame,
         snackbar,
         showSnackbar,
         closeSnackbar,
-        isRubricModalOpen,
-        setIsRubricModalOpen,
       }}
     >
       {children}
