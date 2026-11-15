@@ -1,0 +1,8 @@
+{
+  "name": "Mi Mejor Patita - Gestión Veterinaria",
+  "description": "Aplicativo móvil de gestión veterinaria con reserva de citas de baño y atención médica, calendario interactivo y catálogo de servicios.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
